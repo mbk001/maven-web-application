@@ -1,6 +1,6 @@
 node{
    agent{
-   label 'master'
+   labels 'master'
    }
    tools{
     label 'maven_3.9.1'
