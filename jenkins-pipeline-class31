@@ -1,7 +1,7 @@
 node{
   def mavenHome = tool name: 'maven_3.9.1'
    agent{
-   labels 'terraformnode'
+   label 'terraformnode'
    }
  stage('1.CodeClone'){
     git credentialsId: 'gitHubCredentials', url: 'https://github.com/mbk001/maven-web-application.git'
