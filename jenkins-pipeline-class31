@@ -1,8 +1,5 @@
 node{
-   agent{
-     label 'master'
-   }
-  def mavenHome = tool name: 'maven_3.9.1'
+       def mavenHome = tool name: 'maven_3.9.1'
  stage('1.CodeClone'){
     git credentialsId: 'gitHubCredentials', url: 'https://github.com/mbk001/maven-web-application.git'
    }
